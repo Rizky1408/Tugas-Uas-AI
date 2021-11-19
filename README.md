@@ -87,10 +87,16 @@ print("Luas Segitiga adalah :",luas)
 
 # Hitung nilai tertinggi dari sekelompok data yang di tampung di dalam sebuah list
 
-Untuk nilai 10 dan 11 akan di anggap 1 dan 0 serta 1 dan 1.
+jika menggunakan fungsi max maka 10 dan 11 akan di anggap bilangan tunggal.
 ```
-def proses(a):
-    return max(a)
+def proses(deret_bilangan):
+    nilai_terbesar = deret_bilangan[0]
+
+    for nilai in deret_bilangan:
+        if nilai > nilai_terbesar:
+            nilai_terbesar = nilai
+
+    return nilai_terbesar
  
 def cetakhasil(hasil):
     print("bilangan terbesar adalah :",proses(hasil))       
@@ -99,7 +105,7 @@ def inputdata():
     bilangan = []
     n = int(input("masukan banyak data yang di inginkan :"))
     for i in range(n):
-        masukandata = input("masukan bilangan :")
+        masukandata = float(input("masukan bilangan :"))
         bilangan.append(masukandata)
     cetakhasil(bilangan)
     
