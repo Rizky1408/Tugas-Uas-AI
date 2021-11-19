@@ -190,6 +190,8 @@ cetak_matriks(hasil)
 
 <b> Bagian 1 </b>
 ```
+import math
+
 print("Persamaan: ax^2 + bx + c = 0")
 a = float(input("a = "))
 b = float(input("b = "))
@@ -203,6 +205,7 @@ else :
   x2 = (b - math.sqrt(det))/(2 * a)
   print("x1 =", x1)
   print("x2 =", x2)
+
 ```
 <b> Bagian 2 </b>
 ```
