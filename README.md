@@ -4,7 +4,7 @@ Nama  : Rizky Adi Ryanto<br>
 Nim   : 19.01.013.044<br>
 Kelas : AI B <br>
 
-# Program menghitung luas persegi panjang, segitiga, dan lingkaran menggunakan fungsi
+# 1.Program menghitung luas persegi panjang, segitiga, dan lingkaran menggunakan fungsi
 
 ```
 def persegipanjang(panjang,lebar):
@@ -36,7 +36,7 @@ elif pilih == 3:
 print(float(luas))
 ```
 
-# Modifikasi problem di atas dengan mengakses function berbeda file 
+# 2. Modifikasi problem di atas dengan mengakses function berbeda file 
 
   <b> main.py </b>
 ```
@@ -74,7 +74,7 @@ def lingkaran(r):
     return (3.14 * (r ** 2))
 ```
 
-# Hitung Luas Segitiga menggunakan Fungsi
+# 3. Hitung Luas Segitiga menggunakan Fungsi
 ```
 def segitiga(alas,tinggi):
     return (0.5 * (alas * tinggi))
@@ -85,7 +85,7 @@ luas = segitiga(alas,tinggi)
 print("Luas Segitiga adalah :",luas)
 ```
 
-# Hitung nilai tertinggi dari sekelompok data yang di tampung di dalam sebuah list
+# 4. Hitung nilai tertinggi dari sekelompok data yang di tampung di dalam sebuah list
 
 jika menggunakan fungsi max maka 10 dan 11 akan di anggap bilangan tunggal.
 ```
@@ -112,7 +112,7 @@ def inputdata():
 inputdata()
 ```
 
-# Menampilkan bilangan kelipatan dari inputan user
+# 5. Menampilkan bilangan kelipatan dari inputan user
 ```
 def cetakhasil(cetak):
     print("bilangan kelipatan :", cetak)
@@ -136,7 +136,7 @@ def inputdata():
 inputdata()
 ```
 
-# Program menghitung faktorial sebuah bilangan(input) menggunakan fungsi 
+# 6. Program menghitung faktorial sebuah bilangan(input) menggunakan fungsi 
 
 ```
 def faktorial(n):
@@ -150,7 +150,7 @@ faktor = faktorial(bilangan)
 print(f'{bilangan}! = {faktor}')
 ```
 
-# Program menjumlahkan List, Disini akan saya demokan dalam bentuk matriks
+# 7. Program menjumlahkan List, Disini akan saya demokan dalam bentuk matriks
 ```
 def cetak_matriks(matriks):
     for row in matriks:
@@ -186,7 +186,7 @@ print("\nhasil penjumlahan :")
 hasil = jumlahkan_matriks(list_a, list_b)
 cetak_matriks(hasil)
 ```
-# Program menghitung persamaan kuadrat
+# 8. Program menghitung persamaan kuadrat
 ```
 print("Persamaan: ax^2 + bx + c = 0")
 a = float(input("a = "))
