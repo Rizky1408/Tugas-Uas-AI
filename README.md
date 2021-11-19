@@ -86,12 +86,14 @@ print("Luas Segitiga adalah :",luas)
 ```
 
 # Hitung nilai tertinggi dari sekelompok data yang di tampung di dalam sebuah list
+
+Untuk nilai 10 dan 11 akan di anggap 1 dan 0 serta 1 dan 1.
 ```
 def proses(a):
     return max(a)
  
 def cetakhasil(hasil):
-    print("bilangan terbesar adalah :",hasil)       
+    print("bilangan terbesar adalah :",proses(hasil))       
 
 def inputdata():
     bilangan = []
@@ -99,9 +101,7 @@ def inputdata():
     for i in range(n):
         masukandata = input("masukan bilangan :")
         bilangan.append(masukandata)
-        
-    hasil = proses(bilangan)
-    cetakhasil(hasil)
+    cetakhasil(bilangan)
     
 inputdata()
 ```
