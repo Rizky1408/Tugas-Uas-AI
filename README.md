@@ -186,3 +186,19 @@ print("\nhasil penjumlahan :")
 hasil = jumlahkan_matriks(list_a, list_b)
 cetak_matriks(hasil)
 ```
+# Program menghitung persamaan kuadrat
+```
+print("Persamaan: ax^2 + bx + c = 0")
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+print("-----------------------------")
+det = b * b - 4 * a * c
+if (det<0) :
+  print("Akar Imajiner.")
+else :
+  x1 = (b + math.sqrt(det))/(2 * a)
+  x2 = (b - math.sqrt(det))/(2 * a)
+  print("x1 =", x1)
+  print("x2 =", x2)
+```
