@@ -73,3 +73,37 @@ def segitiga(alas,tinggi):
 def lingkaran(r):
     return (3.14 * (r ** 2))
 ```
+
+# Hitung Luas Segitiga menggunakan Fungsi
+```
+def segitiga(alas,tinggi):
+    return (0.5 * (alas * tinggi))
+
+alas = int(input("masukan alas :"))
+tinggi = int(input("masuk tinggi :"))
+luas = fl.segitiga(alas,tinggi)
+print("Luas Segitiga adalah :",luas)
+```
+
+# Hitung nilai tertinggi dari sekelompok data yang di tampung di dalam sebuah list
+```
+def proses(a):
+    return max(a)
+ 
+def cetakhasil(hasil):
+    print("bilangan terbesar adalah :",hasil)       
+
+def inputdata():
+    bilangan = []
+    n = int(input("masukan banyak data yang di inginkan :"))
+    for i in range(n):
+        masukandata = input("masukan bilangan :")
+        bilangan.append(masukandata)
+        
+    hasil = proses(bilangan)
+    cetakhasil(hasil)
+    
+inputdata()
+```
+
+# Menampilkan bilangan kelipatan dari inputan user
