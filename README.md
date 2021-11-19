@@ -187,6 +187,8 @@ hasil = jumlahkan_matriks(list_a, list_b)
 cetak_matriks(hasil)
 ```
 # 8. Program menghitung persamaan kuadrat
+
+<b> Bagian 1 </b>
 ```
 print("Persamaan: ax^2 + bx + c = 0")
 a = float(input("a = "))
@@ -202,3 +204,13 @@ else :
   print("x1 =", x1)
   print("x2 =", x2)
 ```
+<b> Bagian 2 </b>
+```
+def deret(a,b,n):
+    sn = n / 2 * ((2 * a) + (n - 1) * b)
+    return sn
+
+hasil = deret(1,2,10)
+print(hasil)
+```
+
