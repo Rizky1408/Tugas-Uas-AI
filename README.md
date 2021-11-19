@@ -1,8 +1,8 @@
 # Tugas-Uas-AI
 
-Nama  : Rizky Adi Ryanto
-Nim   : 19.01.013.044
-Kelas : AI B
+Nama  : Rizky Adi Ryanto<br>
+Nim   : 19.01.013.044<br>
+Kelas : AI B <br>
 
 # Program menghitung luas persegi panjang, segitiga, dan lingkaran menggunakan fungsi
 
