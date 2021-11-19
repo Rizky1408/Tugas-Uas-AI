@@ -81,7 +81,7 @@ def segitiga(alas,tinggi):
 
 alas = int(input("masukan alas :"))
 tinggi = int(input("masuk tinggi :"))
-luas = fl.segitiga(alas,tinggi)
+luas = segitiga(alas,tinggi)
 print("Luas Segitiga adalah :",luas)
 ```
 
@@ -107,3 +107,76 @@ inputdata()
 ```
 
 # Menampilkan bilangan kelipatan dari inputan user
+```
+def cetakhasil(cetak):
+    print("bilangan kelipatan :", cetak)
+
+def proses(nilai,kelipatan):
+    for i in nilai:
+        if i % kelipatan == 0:
+            cetakhasil(i)
+            
+def inputdata():
+    bilangan = []
+    for i in range(5):
+        masukandata = int(input("masukan bilangan :"))
+        bilangan.append(masukandata)
+
+    kelipatan = int(input("masukan kelipatan :"))
+    
+    hasil = proses(bilangan,kelipatan)
+    cetakhasil(hasil)
+    
+inputdata()
+```
+
+# Program menghitung faktorial sebuah bilangan(input) menggunakan fungsi 
+
+```
+def faktorial(n):
+    if n > 2:
+        return n * faktorial(n - 1)
+    
+    return 2
+
+bilangan = int(input("bilangan :"))
+faktor = faktorial(bilangan)
+print(f'{bilangan}! = {faktor}')
+```
+
+# Program menjumlahkan List, Disini akan saya demokan dalam bentuk matriks
+```
+def cetak_matriks(matriks):
+    for row in matriks:
+        print(row)
+ 
+def pjg_matriks(matriks):
+    return len(matriks[0])
+ 
+def lbr_matriks(matriks):
+    return len(matriks)
+ 
+def jumlahkan_matriks(mat_a, mat_b):
+    temp_row = []
+    temp_mat = []
+ 
+    for i in range(0, lbr_matriks(mat_a)):
+        for j in range(0, pjg_matriks(mat_a)):
+            temp_row.append(mat_a[i][j] + mat_b[i][j])
+        temp_mat.append(temp_row)
+        temp_row = []
+    return temp_mat
+ 
+list_a = [[1, 2, 3, 5], [1, 2, 3, 5], [1, 2, 3, 5]]
+list_b = [[1, 1, 1, 1], [1, 1, 1, 1], [1, 1, 1, 1]]
+ 
+print("list_a : ")
+cetak_matriks(list_a)
+ 
+print("\nlist_b : ")
+cetak_matriks(list_b)
+ 
+print("\nhasil penjumlahan :")
+hasil = jumlahkan_matriks(list_a, list_b)
+cetak_matriks(hasil)
+```
